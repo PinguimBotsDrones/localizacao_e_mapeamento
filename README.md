@@ -1,16 +1,14 @@
-# object-detection-2021
-Object Detection Code for 2021
+Código usado na tarefa de detecção de objetos da liga @Home em 2021.
 
-Detecção de objetos:
+Uma explicação breve do código pode ser vista em:
+https://www.youtube.com/watch?v=hn7FEuZLm4c&list=PL9ESgQmnVQPZaqi1JAqaa_HBL3-dX_GLO&index=9&pp=iAQB
 
-Uma vez treinado o modelo coloque o arquivo do modelo na pasta model-data/
-e as imagens de entrada dentro da pasta input-data
+O código tem dois arquivos principais:
 
-Ajuste os parâmetros das pastas acima no arquivo keras_model_loading.py
+keras_transfer_learning.py -> Treinamento do modelo
+keras_model_loading -> Carregamento do modelo e detecção de objetos em imagens
 
-Rodando a detecção:
-
-No Linux:
-$ python keras_model_loading 2> /dev/null
+Para rodar a detecção utilize:
+python keras_model_loading.py 2> /dev/null
 O envio da saída de erro para /dev/null é para fazer com que algumas mensagens de aviso
 não sejam mostradas
